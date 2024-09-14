@@ -8,13 +8,13 @@
 
     <style>
         body {
-            font-family: 'Quicksand', sans-serif; /* 使用更加圆润的 Quicksand 字体 */
+            font-family: 'Quicksand', sans-serif; 
             margin: 0;
             padding: 0;
-            background-color: #F4A460; /* 姜黄色背景 */
+            background-color: #F4A460; 
         }
 
-        /* 页面的容器 */
+     
         .container {
             display: flex;
             flex-direction: row;
@@ -27,7 +27,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* 图片样式 */
+        /* Photo */
         .profile-photo {
             max-width: 500px;
             height: auto;
@@ -35,21 +35,21 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        /* 文本部分 */
+        /* Text */
         .text-content {
             flex: 1;
             font-size: 1.3em;
             line-height: 1.6;
         }
 
-        /* 标题样式 */
+        /* Title */
         h1 {
             text-align: center;
             color: #333;
             font-size: 2.8em;
         }
 
-        /* 响应式设计：在小屏幕上，图片和文字将垂直排列 */
+
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -64,19 +64,19 @@
 </head>
 <body>
 
-    <!-- 页面标题 -->
+    <!-- Title -->
     <h1>About Me</h1>
 
-    <!-- 页面主要内容 -->
+    <!-- Content -->
     <div class="container">
-        <!-- 个人介绍文字 -->
+        <!-- Intro -->
         <div class="text-content">
             <p>Hello! My name is Ruby Xu, a sophomore from Hangzhou, China. I am planning to major in Computer Science and Psychology. I am interested in persuing my further acedamic or career goal in human-computer interaction. </p>
 
             <p>Besides academics, I love traveling, exploring new cultures, listening to music, and painting. I'm always curious and looking forward to learning new things. Recently, I am interested in photography and personality theories (and my MBTI is INTP) Feel free to connect with me if you're interested in similar fields!</p>
         </div>
 
-        <!-- 个人照片 -->
+        <!-- Photo -->
         <img src="assets/img/profile.jpg" alt="My profile photo" class="profile-photo">
     </div>
 

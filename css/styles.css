@@ -42,8 +42,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 49, 81, 74;
-  --bs-secondary-rgb: 236, 184, 7;
+  --bs-primary-rgb: 96, 133, 162;
+  --bs-secondary-rgb: 231, 230, 217;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 236, 184, 7;
@@ -126,7 +126,7 @@ h1, .h1 {
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 3rem;
-    text-shadow:  -2px -2px 0 #FFFFFF;
+    text-shadow:  -2px -2px 0 #394c5d;
   }
 }
 
@@ -145,8 +145,8 @@ h3, .h3 {
 @media (min-width: 1200px) {
   h3, .h3 {
     font-size: 3rem;
-    color: #004b49;
-    text-shadow: -2px -2px 0 #FFFFFF;
+    color: #e7e6d9;
+    
   }
 }
 
@@ -2849,11 +2849,11 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #004b49;
-  --bs-btn-border-color: #004b49;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #E4BA40;
-  --bs-btn-hover-border-color: #E4BA40;
+  --bs-btn-bg: #394c5d;
+  --bs-btn-border-color: #394c5d;
+  --bs-btn-hover-color: #394c5d;
+  --bs-btn-hover-bg: #e7e6d9;
+  --bs-btn-hover-border-color: #e7e6d9;
   --bs-btn-focus-shadow-rgb: 63, 147, 173;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #17667f;
@@ -2950,10 +2950,10 @@ textarea.form-control-lg {
 }
 
 .btn-light {
-  --bs-btn-color: #000;
-  --bs-btn-bg: #f8f9fa;
-  --bs-btn-border-color: #f8f9fa;
-  --bs-btn-hover-color: #000;
+  --bs-btn-color: #394c5d;
+  --bs-btn-bg: #e7e6d9;
+  --bs-btn-border-color: #e7e6d9;
+  --bs-btn-hover-color: #394c5d;
   --bs-btn-hover-bg: #d3d4d5;
   --bs-btn-hover-border-color: #c6c7c8;
   --bs-btn-focus-shadow-rgb: 211, 212, 213;
@@ -10835,7 +10835,8 @@ html {
 }
 
 .content-section {
-  padding-top: 7.5rem;
+  background-color: #3F5164;
+  padding-top: 3rem;
   padding-bottom: 7.5rem;
 }
 
@@ -10881,7 +10882,7 @@ html {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #31514a;
+  background: #394c5d;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -10904,7 +10905,7 @@ html {
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #fff;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(231, 230, 217, 0.2);
 }
 
 .sidebar-nav li a:active,
@@ -10914,7 +10915,7 @@ html {
 
 .sidebar-nav > .sidebar-brand {
   font-size: 1.2rem;
-  background: rgba(52, 58, 64, 0.1);
+  background: rgba(231, 230, 217, 0.1);
   height: 80px;
   line-height: 50px;
   padding-top: 15px;
@@ -11031,7 +11032,7 @@ footer.footer .social-link:hover {
   font-family: "Nerko One", cursive;
   font-weight: 400;
   font-style: normal;
-  color: #004b49;
+  color: #e7e6d9;
 }
 
 @media (min-width: 992px) {
@@ -11102,7 +11103,7 @@ footer.footer .social-link:hover {
             clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(49, 81, 74, 0.9);
+    background-color: rgba(86, 135, 166, 0.9);
     -webkit-clip-path: inset(2rem);
             clip-path: inset(2rem);
   }

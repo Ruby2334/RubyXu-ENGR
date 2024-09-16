@@ -10,14 +10,14 @@
             font-family: 'Quicksand', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #F4A460; /* 姜黄色背景 */
+            background-color: #e7e6d9; /* 米黄色背景 */
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            flex-direction: column; /* 垂直布局 */
         }
 
-        /* 图片容器 */
         .photo-container {
             display: flex;
             flex-wrap: wrap; /* 确保图片在小屏幕上自动换行 */
@@ -25,11 +25,13 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
+            width: 100%; /* 容器宽度为全屏 */
         }
 
         /* 单张图片样式 */
         .photo-container img {
-            width: 300px;
+            width: 90%; /* 图片宽度为容器的 90% */
+            max-width: 400px; /* 最大宽度为 400px */
             height: auto;
             border-radius: 10px; /* 圆角 */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 阴影效果 */
@@ -41,16 +43,25 @@
             transform: scale(1.05); /* 放大 5% */
         }
 
-        /* 响应式：小屏幕时图片全宽度展示 */
+        .greeting {
+            font-size: 1.5em;
+            color: #32; 
+            margin-bottom: 20px;
+        }
+
         @media (max-width: 768px) {
             .photo-container img {
                 width: 100%;
-                max-width: 300px;
+                max-width: 300px; /* 小屏幕最大宽度为 300px */
             }
         }
     </style>
 </head>
 <body>
+    <!-- Greeting -->
+    <div class="greeting">
+        Hi🐱My name is Xiaomi
+    </div>
 
     <!-- 图片容器 -->
     <div class="photo-container">
@@ -58,6 +69,5 @@
         <img src="assets/img/cat2.jpg" alt="Cute cat 2">
         <img src="assets/img/cat3.jpg" alt="Cute cat 3">
     </div>
-
 </body>
 </html>

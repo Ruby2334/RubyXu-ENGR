@@ -3,74 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 - 3D Printed Name Tag</title>
-    <link href="css/styles.css" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
-
-
-</head>
-<body>
-    <!-- Navigation, Header, or other page structure -->
-    
-  <section>
-    <h1>3D Printed Whale</h1>
-    <h2>Process:</h2>
-    <ul>
-        <h2><li>Browsing on  <a href="https://www.printables.com" target="_blank"> printables</a> to find a print that will push the limit of the printer.</li></h2>
-        <h2><li>Download the STL file</a>.</li></h2>
-        <h2><li>Slice the whale body model into two parts in order to print it with different colors.</li></h2>
-        <h2><li>Click "slice now" in Prusa Slicer, then export the G-code after editing the print settings. The G-code file: <a href="Gcodes/whale.bgcode" download>Download G-code File</a></li></h2>
-        <h2><li>Rename my G-code file and export it to a flash disk.</li></h2>
-        <h2><li>Request a job number and write it on a sticky note.</li></h2>
-        <h2><li>Insert the flash disk into the printer. Choose my file to print. Stick my note beside it.</li></h2>
-        <h2><li>Change the material from white to blue when the first part of whale body is finished printing.</li></h2>
-        <h2><li>Printing finished. Remove the whale from the printer bed.</li></h2>
-    </ul>
-
-<img src="assets/img/portfolio-2.jpg" alt="portfolio2-Image" class="bottom-image">
-<img src="assets/img/portfolio-2.2.jpg" alt="portfolio2.2-Image" class="new-right-side-image">
-
-
-    </section>
- <section>
-  
-    <h2>Reflection:</h2>
-    <ul>
-        <h2><li>The "edge case" did not fail.</li></h2>
-        <h2><li>The reason is that the printer actually can print out the joints between whale's body sections, which is over my suspection.</a>.</li></h2>
-        <h2><li>Since the goal of part2 is to test the printer's limit,</li></h2>
-        <h2><li>I would need to find  <a href="project3.html"target="_blank">another print</a>.</li></h2>
-        
-<style>
+    <title>3D Printed Whale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <style>
         body {
-            background-color: #f0e68c;
-        }
-        .new-right-side-image {
-            float: right; 
-    margin-left: 2px;
-    position: relative; 
-    top: -550px; 
-    max-width: 390px;
-    height: auto; 
-    clear: none; 
-}
-        
-        .bottom-image {
-            display: block;
-            margin-top: 20px; 
-            max-width: 500px; 
-            height: auto;
-            clear: both; 
+            font-family: 'Quicksand', sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #394c5d;
         }
 
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-photo {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin-right: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-content {
+            flex: 1;
+            font-size: 1.3em;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #e7e6d9; 
+            font-size: 2.8em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-photo {
+                margin: 0 auto 20px;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- Footer, scripts -->
-    <footer class="footer text-center">
-        <p>© 2024 Ruby Xu</p>
-    </footer>
+    <!-- Title -->
+    <h1>3D Printed Whale</h1>
+    <!-- Content -->
+    <div class="container">
+        <!-- Intro -->
+        <div class="text-content">
+            <p>Process:</p>
+            <p>Browsing on  <a href="https://www.printables.com" target="_blank"> printables</a> to find a print that will push the limit of the printer.</p>
+            <p>Download the STL file</p>
+            <p>Slice the whale body model into two parts in order to print it with different colors.</p>
+            <p>Click "slice now" in Prusa Slicer, then export the G-code after editing the print settings. The G-code file: <a href="Gcodes/whale.bgcode" download>Download G-code File</a></p>
+            <p>Rename my G-code file and export it to a flash disk.</p>
+            <p>Request a job number and write it on a sticky note.</p>
+            <p>Insert the flash disk into the printer. Choose my file to print. Stick my note beside it.Change the material from white to blue when the first part of whale body is finished printing.</p>
+            <p>Printing finished. Remove the whale from the printer bed.</p>
+        </div>
+        <!-- Photo -->
+        <img src="assets/img/portfolio-2.jpg"  alt="photo" class="profile-photo">
+    </div>
 </body>
 </html>

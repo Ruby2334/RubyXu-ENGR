@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Remix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #394c5d;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-photo {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin-right: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-content {
+            display: block;
+            flex: 2;
+            font-size: 1.3em;
+            line-height: 1.6;
+        }
+        .clear {
+    clear: both; 
+}
+        .inline-photo{
+    float: left; 
+    margin: 0 20px 10px 0; 
+    width: 30%; 
+    height: auto; 
+}
+
+        h1 {
+            text-align: center;
+            color: #e7e6d9; 
+            font-size: 2.8em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-photo {
+                margin: 0 auto 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Title -->
+    <h1>Fusion Remix</h1>
+    <!-- Content -->
+    <div class="container">
+        <!-- Intro -->
+        <div class="text-content">
+            <p>Process:</p>
+            <p>1. Downloaded the top surface of Oreo model.</p>
+            <p>2. Sketched out my idea on paper.</p>
+            <img src="assets/img/portfolio-6.2.jpg" alt="sketch photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>3. Imported the 3mf file into Fusion.</p>
+            <img src="assets/img/fusion.jpg" alt="CAD photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>4. Used the prepare function to turn the solid model into mesh.</p>
+            <img src="assets/img/fusion_step1.jpg" alt="CAD photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>5. Deleted the text part("Oreo") on the Oreo's surface.</p>
+            <p>6. Repaired the Oreo's surface.</p>
+            <img src="assets/img/fusion_step2.jpg" alt="CAD photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>7. Created a sketch with text "Snoopy".</p>
+            <p>8. Extruded the text to create a 3-D text. Moved it to the Oreo's surface. Combine.</p>
+            <p>9. Adjust the size to be fit with the botton part of Oreo.</p>
+            <img src="assets/img/fusion_step3.jpg" alt="CAD photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>10. Exported the 3mf file. Imported it into Prusaslicer.</p>
+            <p>11. Sliced and printed.</p>
+            <p>The first print failed:</p>
+            <img src="assets/img/fusion_fail.jpg" alt="CAD photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>11.Figured out the reason. Might because the "Snoopy" part is a bit higher than the rest of Oreo's surface.</p>
+            <p>12. Solution: Moved the whole Oreo to sink slightly into the printer bed, in order to create a flat surface as the first layer of printing.</p>
+            <img src="assets/img/fusion_step4.jpg" alt="CAD photo" class="inline-photo"><img src="assets/img/fusion_step5.jpg" alt="CAD photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>13. Printed again.</p>
+            <img src="assets/img/portfolio-6.jpg" alt="CAD photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>Reflection:</p>
+            <p>Overall, the remix was successful. However, it did not achieve my goal of screwing the top surface part and button part of oreo together.</p>
+            <p>This was beacause the size of the top surface is not fit with the size of the button part. And it was caused by the missing documention to the first scaling of the button part. I had to measure the diameter of the scaled botton part. However, the measurement was not precise enough. I had to select the measuring points by myself, which means the line between two selected points may not exactly be the diameter.</p>
+            <p>To enhance my printing process, I will document more details during future remixing efforts. Additionally, if time permits, I may rescale and reprint the top surface for better results.</p>
+            <p>Also, through my observation, the surface of my print is not as smooth as the bottom part of the Oreo. I suspect this is due to the slicing step in my process(step12). At the moment, I do not have a solution for this rough texture, but I will explore potential approaches in Fusion later.</p>
+            <p>As for the software, the Fusion is a useful CAD tool which has lots of functions. I believe I will spend more time on it to learn more CAD skills.</p>
+            
+        </div>
+        
+
+    </div>
+</body>
+</html>

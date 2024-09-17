@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinkerCad Remix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #394c5d;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-photo {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin-right: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-content {
+            display: block;
+            flex: 2;
+            font-size: 1.3em;
+            line-height: 1.6;
+        }
+        .clear {
+    clear: both; /* 清除浮动 */
+}
+        .inline-photo{
+    float: left; 
+    margin: 0 20px 10px 0; 
+    width: 30%; 
+    height: auto; 
+}
+
+        h1 {
+            text-align: center;
+            color: #e7e6d9;
+            font-size: 2.8em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-photo {
+                margin: 0 auto 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Title -->
+    <h1>TinkerCad Remix</h1>
+    <!-- Content -->
+    <div class="container">
+        <!-- Intro -->
+        <div class="text-content">
+            <p>Process:</p>
+            <p>1. Found 2 models on https://thangs.com/</p>
+            <img src="assets/img/snoopy.jpg" alt="sketch photo" class="inline-photo"><img src="assets/img/oreo.jpg" alt="sketch photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>2. Sketched out my idea on paper.</p>
+            <img src="assets/img/portfolio-5.2.jpg" alt="sketch photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>3. Remixed the Snoopy model and the Oreo botton surface in TinkerCad.</p>
+            <p>I realized that a standing Snoopy in Oreo requires a thick interlayer, which reduces the printing's similarity to Oreo.</p>
+            <p>Thus, I changed the posture of Snoopy to lying.</p>
+            <img src="assets/img/snoopy-oreo-inCAD.jpg" alt="CAD photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>In order to "stick" the Snoopy onto the flat oreo surface, I sliced the back side of Snoopy to create a flat surface on it.</p>
+            <p>4. Remixed the two models.</p>
+            <p>5. Increase the overall size to make the details more visible.</p>
+            <p>6. Ecported the file as 3mf file: <a href="files.snoopyinoreo.3mf" download>Download 3mf File</a></p>
+            <p>7. Imported the 3mf file into Prusaslicer.</p>
+            <img src="assets/img/snoopyoreo_Slice1.jpg" alt="CAD photo" class="inline-photo"><img src="assets/img/snoopyoreo_Slice2.jpg" alt="CAD photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>8. Sliced the model into two pieces to switch the color from black to white.</p>
+            <p>9. Printed.</p>
+            <img src="assets/img/portfolio-5.jpg" alt="CAD photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>Reflection:</p>
+            <p>Overall, the remix was successful and it achieved my goal.</p>
+            <p>The layer-by-layer printing capability of a 3D printer is particularly well-suited to replicating the appearance of an Oreo.</p>
+            <p>To enhance my printing process, I will document more details of my design. This is because the undocumented size scaling has created significant difficulties for further model design, which will be elaborated on in the Fusion Remix.</p>
+            <p>Also, TinkerCad does not have slicing function, and I had to create two cubes to slice the model into two parts. It might remind me the importance of choosing an appropriate CAD software if possible in the future, which would increase the design efficiency.</p>
+            <p>In the future, I plan to add more functional elements to my design. For instance, I might incorporate a hole with a chain so that the Oreo can be hung on a bag or keychain.</p>
+
+        </div>
+        
+
+    </div>
+</body>
+</html>

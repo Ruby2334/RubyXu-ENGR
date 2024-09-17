@@ -3,54 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 - 3D Printed Name Tag</title>
-    <link href="css/styles.css" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
-
-
-</head>
-<body>
-    <!-- Navigation, Header, or other page structure -->
-    
-  <section>
-    <h1>3D Printed Name Tag</h1>
-    <h2>Process:</h2>
-    <ul>
-        <h2><li>Download and set the Prusa Slicer.</li></h2>
-        <h2><li>Download the nametag 3MF <a href="http://brandeis.app.box.com/v/prusaminifiles" target="_blank">file</a>.</li></h2>
-        <h2><li>Change the text on the name tag file to "Ruby Xu" in Prusa Slicer. Choose a font.</li></h2>
-        <h2><li>Click "slice now" in Prusa Slicer, then export the G-code after editing the print settings. The G-code file: <a href="Gcodes/keychain.bgcode" download>Download G-code File</a></li></h2>
-        <h2><li>Rename my G-code file and export it to a flash disk.</li></h2>
-        <h2><li>Request a job number and write it on a sticky note.</li></h2>
-        <h2><li>Insert the flash disk into the printer. Choose my file to print. Stick my note beside it.</li></h2>
-        <h2><li>Change the material from purple to yellow when the background layer finishes printing.</li></h2>
-        <h2><li>Printing finished. Remove my keychain from the printer bed.</li></h2>
-    </ul>
-</section>
-<img src="assets/img/portfolio-1.jpg" alt="portfolio1-Image" class="top-right-image">
-
-<style>
-    .top-right-image {
-        top: 0; 
-        left: 20; 
-        margin: 20px; 
-        max-width: 500px; 
-        height: auto; 
-    }
-</style>
-    </section>
-<style>
+    <title>3D Printed Name Tag</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <style>
         body {
-            background-color: #f0e68c; 
+            font-family: 'Quicksand', sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #394c5d;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-photo {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin-right: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-content {
+            flex: 1;
+            font-size: 1.3em;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #e7e6d9; /* 米黄色 */
+            font-size: 2.8em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-photo {
+                margin: 0 auto 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Footer, scripts -->
-    <footer class="footer text-center">
-        <p>© 2024 RubyXu</p>
-    </footer>
+    <!-- Title -->
+    <h1>3D Printed Name Tag</h1>
+    <!-- Content -->
+    <div class="container">
+        <!-- Intro -->
+        <div class="text-content">
+            <p>Process:</p>
+            <p>·Download and set the Prusa Slicer.</p>
+            <p>·Download the nametag 3MF <a href="http://brandeis.app.box.com/v/prusaminifiles" target="_blank">file</a></p>
+            <p>·Change the text on the name tag file to "Ruby Xu" in Prusa Slicer. Choose a font.</li>
+            <p>·Click "slice now" in Prusa Slicer, then export the G-code after editing the print settings. The G-code file: <a href="Gcodes/keychain.bgcode" download>Download G-code File</a></p>
+            <p>·Rename my G-code file and export it to a flash disk.</p>
+            <p>·Request a job number and write it on a sticky note.</p>
+            <p>·Insert the flash disk into the printer. Choose my file to print. Stick my note beside it.</p>
+            <p>·Change the material from purple to yellow when the background layer finishes printing.</p>
+            <p>·Printing finished. Remove my keychain from the printer bed.</p>
+        </div>
+        <!-- Photo -->
+        <img src="assets/img/portfolio-1.jpg"  alt="photo" class="profile-photo">
+    </div>
 </body>
 </html>

@@ -11117,17 +11117,8 @@ footer.footer .social-link:hover {
             clip-path: inset(2rem);
   }
 
-  .inline-photo{
-    float: right; /* Or right, depending on how you want the text to wrap around the image */
-    margin: 0 20px 10px 0; /* Adds spacing around the image */
-    width: 300px !important; /* Adjust the width as necessary */
-}
-@media (max-width: 768px) {
-    .inline-photo {
-        float: none; /* 在小屏幕上取消浮动 */
-        display: block; /* 使图片成为块级元素 */
-        margin: 10px auto; /* 在图片上下添加间隔，并水平居中显示 */
-        width: 20%; /* 小屏幕上使用更大的百分比宽度 */
-    }
-}
+
+
+ 
+
 

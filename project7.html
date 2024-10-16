@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock Soldering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #394c5d;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-photo {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin-right: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-content {
+            display: block;
+            flex: 2;
+            font-size: 1.3em;
+            line-height: 1.6;
+        }
+        .clear {
+    clear: both; /* 清除浮动 */
+}
+        .inline-photo{
+    float: left; 
+    margin: 0 20px 10px 0; 
+    width: 30%; 
+    height: auto; 
+}
+
+        h1 {
+            text-align: center;
+            color: #e7e6d9;
+            font-size: 2.8em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-photo {
+                margin: 0 auto 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Title -->
+    <h1>Alarm Clock Soldering</h1>
+    <!-- Content -->
+    <div class="container">
+        <!-- Intro -->
+        <div class="text-content">
+            <p>Process:</p>
+            <p>1. Tools set up.</p>
+            <p>2. Read the instructions.</p>
+            <p>3. Soldered all the elements onto the circuit board.</p>
+            <img src="assets/img/Sodering.jpg" alt="Soldering photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>4. Cut off extra solders.</p>
+            <p>5. Finished soldering.</p>
+            <img src="assets/img/Sodering-back.jpg" alt="finished soldering photo" class="inline-photo"><img src="assets/img/portfolio-7.jpg" alt="finished soldering photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>Reflection:</p> 
+            <p>Overall, the soldering was successful, and all functions of the alarm clock worked.</p> 
+            <p>Soldering is so fun, and it’s rewarding to assemble an electronic device by myself.</p>
+            <p>However, I encountered a big problem while soldering. I initially soldered the digital display with the wrong orientation.</p> 
+            <p>It was upside down, so I had to remove it and solder it again.</p> 
+            <p>This was a time-consuming task, since it’s not easy to remove the solder once it has been applied.</p> 
+            <p>This experience taught me to check the components more carefully, not only for the direct signs on them but also for the actual function related to their orientation (e.g., checking the position of dots for the time display, as this information might not be marked on the side of the component).</p>
+        </div>
+        
+
+    </div>
+</body>
+</html>

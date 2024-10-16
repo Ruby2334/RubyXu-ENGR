@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Printed Enclosure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #394c5d;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-photo {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin-right: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-content {
+            display: block;
+            flex: 2;
+            font-size: 1.3em;
+            line-height: 1.6;
+        }
+        .clear {
+    clear: both; 
+}
+        .inline-photo{
+    float: left; 
+    margin: 0 20px 10px 0; 
+    width: 30%; 
+    height: auto; 
+}
+
+        h1 {
+            text-align: center;
+            color: #e7e6d9;
+            font-size: 2.8em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-photo {
+                margin: 0 auto 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Title -->
+    <h1>3D Printed Enclosure</h1>
+    <!-- Content -->
+    <div class="container">
+        <!-- Intro -->
+        <div class="text-content">
+            <p>Process:</p>
+            <p>1. Brainstormed and drew my plan for a design for an enclosure on paper.</p>
+            <p>2. Took measurements of the electronics kit using digital calipers. Recorded.</p>
+            <img src="assets/img/sketch-clockv1.jpg" alt="sketch photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>3. Created the 1st version of enclosure in Fusion. Imported the 3mf file into Prusa Slicer and printed it. </p>
+            <img src="assets/img/3d-v1.jpg" alt="fusion photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>4. I realized that the buttons on the clock couldn't be easily pressed because other elements were higher than the buttons, causing the enclosure's surface to be higher than the buttons' surface. Additionally, the hole for the power wire was too small.</p>
+            <p>5. Revised the sketch.</p>
+             <img src="assets/img/sketch-clockv2.jpg" alt="sketch photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>6. Went back to Fusion, designed two buttons, and placed them in the original button holes. I also enlarged the hole for the wire, imported the 3mf file into Prusa Slicer, and printed it. </p>
+            <img src="assets/img/3d-v2.jpg" alt="fusion photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>7. Printed the second enclosure. </p>
+            <img src="assets/img/print-v1.jpg" alt="print photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>8. Found that the enclosure is not thick enough to hold the entire alarm clock. </p>
+            <img src="assets/img/problem-thick.jpg" alt="problem photo" class="inline-photo">
+            <div class="clear"></div>
+            <p>9.  Revised the Fusion model, increased the enclosure's thickness, and flipped the model (changed the order of printed layers) because I found that the support materials made the surface of the print rough.</p>
+            <p>10. Printed the third version of the enclosure.</p>
+            <img src="assets/img/print-v3.jpg" alt="problem photo" class="inline-photo">
+            <div class="clear"></div>
+
+            <img src="assets/img/portfolio-8.jpg" alt="problem photo" class="inline-photo">
+            <div class="clear"></div>
+
+            <p>Reflection:</p> 
+            <p>Overall, the final version of my 3D printed enclosure met the goals of protecting the clock while keeping all functions working well.</p> <p>However, I believe the aesthetics could be improved. For instance, the sharp corners could be more rounded. I plan to add more decorative elements to the enclosure in the future.</p> <p>Also, considering the real usage situations when sketching might help a lot when designing something functional.</p> <p>For instance, if I had thought about the process of pushing the buttons, I might not have needed to print the enclosure twice to fix the button problem.</p> <p>In general, a more careful thought process before CAD is crucial, as the parameters and relationships between parts are not easy to change once they are in CAD.</p>
+        
+        </div>
+        
+
+    </div>
+</body>
+</html>

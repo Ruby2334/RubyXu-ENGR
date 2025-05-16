@@ -84,6 +84,102 @@
 *::after {
   box-sizing: border-box;
 }
+/* Horizontal Timeline Styles */
+.horizontal-timeline {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  border-top: 3px solid #2F3E4D;
+  white-space: nowrap;
+  background: linear-gradient(90deg, #2F3E4D, #4FC3F7);
+  border-radius: 10px;
+}
+
+.horizontal-timeline::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal-timeline::-webkit-scrollbar-thumb {
+  background-color: #4FC3F7;
+  border-radius: 10px;
+}
+
+.timeline-item {
+  display: inline-block;
+  position: relative;
+  margin-right: 40px;
+  text-align: center;
+}
+
+.timeline-item a {
+  display: block;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  color:#6A8D92;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.timeline-item a:hover {
+  background-color:#6A8D92;
+  color: white;
+}
+
+.timeline-item span {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Timeline Style */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: #2F3E4D; /* 深蓝灰色的线 */
+}
+
+.timeline-item .timeline-content {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item .timeline-content a {
+  color: #4FC3F7;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.timeline-item .timeline-content a:hover {
+  color: #039BE5;
+}
+
+.timeline-item .timeline-content span {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 5px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -11031,7 +11127,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+  background:  #2F3E4D; /* 正确的写法 */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11042,6 +11138,32 @@ footer.footer .social-link:hover {
   font-weight: 400;
   font-style: normal;
   color: #e7e6d9;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+
+.caption-content {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-0%, 0%);
+    color: white;
+    text-align: center;
+}
+
+
+.col-lg-6 {
+    margin-bottom: 30px;
 }
 
 @media (min-width: 992px) {
